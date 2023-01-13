@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: pink;
+}
+.background {
+  background-image: linear-gradient(to bottom,transparent 40%,rgba(0,0,0,0.95) 70%, #020202), url("https://i.imgur.com/9KVO1Ok.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-position: top;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0 50px 50px black;
+}
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 100;
+  font-family: 'Gruppo', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+  font-size: 3.5rem;
+  color: pink;
+  text-shadow: 2px 2px 3px;
+}
+.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.layer-1 {
+  background-image: linear-gradient(to bottom,transparent 50%,rgba(0, 0, 0,0.85) 70%, #020202), url("https://media.istockphoto.com/photos/sky-cloud-pink-love-sweet-love-color-tone-for-wedding-card-background-picture-id1180184210?b=1&k=20&m=1180184210&s=612x612&w=0&h=ThOIFBqIrleC4FL5lYaB3lgWXg2rTn5uJCm30Ro8_98=");
+  z-index: 70;
+}
+.layer-2 {
+  background-image: linear-gradient(to bottom,transparent 30%,rgba(0,0,0,0.9) 80%, #020202), url("https://cryptoys.com/assets/waves/DarkAMirrored.svg");
+  z-index: 80;
+}
+
+.content {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  position: relative;
+  background-image: url("https://garden.spoonflower.com/c/8345518/p/f/m/Yja5t4O3gyFnhTOTH06WcZcPeFkgcgce05SkoTe8zfeybr_1d3_iJCQ1JQQ/Bone%20hearts%20on%20blackest%20black%20background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.text {
+  padding: 4rem 10rem 20rem 40rem;
+}
+.me {
+  background-image: url("https://scontent.fbud7-4.fna.fbcdn.net/v/t1.15752-9/323529871_1271929996772223_3878412368942946206_n.png?_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=tdkWO1tfWU4AX_N4IQM&_nc_ht=scontent.fbud7-4.fna&oh=03_AdTf073oRwbvsAp0PvYaGabfGrvaRalxwdBkxaJZDXwPxw&oe=63E8D141");
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-position: left center;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+  }
+  .me {
+    display: none;
+  }
+  .text {
+    padding: 0 3rem 5rem 3rem;
+  }
+}
